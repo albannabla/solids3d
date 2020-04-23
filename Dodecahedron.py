@@ -23,4 +23,7 @@ for f in range(12):
     c.set_facecolor([(0,0,1),(0,1,0),(0,1,1),(1,0,0),(1,0,1),(1,1,0)][a[f]])
     ax.add_collection3d(c)
 
-plt.show()
+#plt.show()
+
+from Animate import make_gif
+make_gif(ax,"dodecahedron")

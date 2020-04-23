@@ -23,14 +23,14 @@ back.append((-1,1,-2))
 left = []
 for i in range(len(X)):
     left.append((X[i][0],Y[i][0],Z[i][0]))
-left.append((-1,-1,-2))
 left.append((-1,1,-2))
+left.append((-1,-1,-2))
 
 right = []
 for i in range(len(X)):
     right.append((X[i][-1],Y[i][-1],Z[i][-1]))
-right.append((1,-1,-2))
 right.append((1,1,-2))
+right.append((1,-1,-2))
 
 bottom = []
 bottom.append((1,-1,-2))
@@ -48,3 +48,4 @@ c.set_facecolor(["yellow","red","orange","green","brown"])
 ax.add_collection3d(c)
 surf = ax.plot_surface(X, Y, Z)
 plt.show()
+
